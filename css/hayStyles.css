@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+     --primary-color:  #FFBC42;
+    --secondary-color: #EB4833;
+    --accent-color: #0A5CAE;
+    --dark: #333333;
+    --cream: #FFF8E7;
+    --light-bg: #FFF5E6;
+}
+
+
+body{
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    background-color:#333333;
+    margin:0;
+    padding:0;
+}
+
+/* Navigation */
+.navbar {
+    background:  #333333 !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+     font-size: 1.8rem;
+    font-weight: bold;
+    color: white !important;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+     color: rgba(255,255,255,0.9) !important;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary-color) !important;
+    transform: translateY(-2px);
+}
+
+.navbar-light .navbar-toggler {
+     border-color: rgba(255,255,255,0.5);
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Header Section */
+header {
+      background:  #FFF8E7
+               url('../images/Haybale.jpg');
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Buttons */
+.btn-custom {
+    background-color: var(--secondary-color);
+    color: var(--dark-text);
+    padding: 12px 40px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-custom:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+    color: white;
+    text-decoration: none;
+}
+
+/* Section Styling */
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 2.5rem;
+    background-color: #333333;
+}
+
+.section-alt {
+    background-color: var(--light-bg);
+}
+
+/* Product Cards */
+.product-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.product-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-body {
+    padding: 25px;
+}
+
+.product-title {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.size-badge {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin: 5px 3px;
+}
+
+/* Client Section */
+.client-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    margin: 10px;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.client-card:hover {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    transform: translateY(-5px);
+}
+
+.client-card h5 {
+    margin: 0;
+    color: var(--accent-color);
+}
+
+.client-card i {
+    color: var(--secondary-color);
+    margin-right: 10px;
+}
+
+/* Stats Section */
+.stats {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    padding: 60px 0;
+}
+
+.stat-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 1.2rem;
+}
+
+/* About Section */
+.about-content {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.feature-box {
+    padding: 30px;
+    background: var(--cream);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.feature-box:hover {
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.feature-box h4 {
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Contact Form */
+.contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.form-control:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.2rem rgba(10, 92, 174, 0.25);
+}
+
+.form-group label {
+    font-weight: 600;
+    color: var(--dark-text);
+}
+
+.contact-info-box {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.contact-item {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: start;
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.contact-item strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Page Management */
+
+/* Success Message */
+
+/* Footer */
