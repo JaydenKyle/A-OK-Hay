@@ -1,45 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-     --primary-color:  #FFBC42;
-    --secondary-color: #EB4833;
-    --accent-color: #0A5CAE;
-    --dark: #333333;
-    --cream: #FFF8E7;
-    --light-bg: #FFF5E6;
+    --primary-green: #4A7C59;
+    --secondary-green: #6B8E23;
+    --golden: #DAA520;
+    --brown: #8B4513;
+    --light: #ffffff;
 }
 
 
 body{
     font-family: "Atkinson Hyperlegible", sans-serif;
-    background-color:#333333;
+    background-color:#ffffff;
+    color: #333333;
     margin:0;
     padding:0;
 }
 
 /* Navigation */
 .navbar {
-    background:  #333333 !important;
+    background:#155724 !important;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    padding: 1rem 0;
+    padding: 10px;
+   
 }
 
 .navbar-brand {
-     font-size: 1.8rem;
+    font-size:medium;
     font-weight: bold;
     color: white !important;
     letter-spacing: 1px;
+    padding-left:10px;
 }
 
 .navbar-nav .nav-link {
-     color: rgba(255,255,255,0.9) !important;
-    margin: 0 15px;
-    font-weight: 500;
+    color: rgba(255,255,255,0.9) !important;
+    margin: 0 10px;
+    font-weight:bold;
     transition: all 0.3s;
+    font-size: medium;
 }
 
 .navbar-nav .nav-link:hover {
-  color: var(--primary-color) !important;
+  color: var(--golden) !important;
     transform: translateY(-2px);
 }
 
@@ -80,7 +83,7 @@ h1 {
 
 /* Buttons */
 .btn-custom {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-green);
     color: var(--dark-text);
     padding: 12px 40px;
     font-size: 1.1rem;
@@ -92,36 +95,28 @@ h1 {
 }
 
 .btn-custom:hover {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-green);
     transform: scale(1.05);
     color: white;
     text-decoration: none;
 }
 
 /* Section Styling */
-.section {
-    padding: 80px 0;
-}
+
 
 .section-title {
     text-align: center;
-    margin-bottom: 50px;
-    color: var(--accent-color);
+    color: var(--golden);
     font-weight: bold;
-    font-size: 2.5rem;
-    background-color: #333333;
 }
 
-.section-alt {
-    background-color: var(--light-bg);
-}
 
 /* Product Cards */
 .product-card {
     background: white;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 20px #155724;
     transition: all 0.3s;
     height: 100%;
     margin-bottom: 30px;
@@ -129,7 +124,7 @@ h1 {
 
 .product-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 30px #155724;
 }
 
 .product-img {
@@ -143,7 +138,7 @@ h1 {
 }
 
 .product-title {
-    color: var(--primary-color);
+    color:#333333;
     font-weight: bold;
     margin-bottom: 15px;
     font-size: 1.8rem;
@@ -151,7 +146,7 @@ h1 {
 
 .size-badge {
     display: inline-block;
-    background-color: var(--accent-color);
+    background-color: var(--golden);
     color: white;
     padding: 5px 12px;
     border-radius: 20px;
@@ -164,7 +159,7 @@ h1 {
     background: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 15px #155724;
     text-align: center;
     margin: 10px;
     min-height: 120px;
@@ -175,30 +170,30 @@ h1 {
 }
 
 .client-card:hover {
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 5px 20px #155724;
     transform: translateY(-5px);
 }
 
 .client-card h5 {
     margin: 0;
-    color: var(--accent-color);
+    color: var(--golden);
 }
 
 .client-card i {
-    color: var(--secondary-color);
+    color: var(--secondary-green);
     margin-right: 10px;
 }
 
 /* Stats Section */
 .stats {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--primary-green), var(--golden));
     color: white;
-    padding: 60px 0;
+    padding: 25px 0;
 }
 
 .stat-box {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .stat-number {
@@ -216,12 +211,12 @@ h1 {
     background: white;
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 20px #155724;
 }
 
 .feature-box {
     padding: 30px;
-    background: var(--cream);
+    background: var(--brown);
     border-radius: 10px;
     margin-bottom: 20px;
     transition: all 0.3s;
@@ -229,17 +224,17 @@ h1 {
 
 .feature-box:hover {
     background: white;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px #155724;
 }
 
 .feature-icon {
     font-size: 2.5rem;
-    color: var(--primary-color);
+    color: var(--golden);
     margin-bottom: 15px;
 }
 
 .feature-box h4 {
-    color: var(--accent-color);
+    color: var(--secondary-green);
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -249,21 +244,21 @@ h1 {
     background: white;
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 20px #155724;
 }
 
 .form-control:focus {
-    border-color: var(--accent-color);
+    border-color: var(--secondary-green);
     box-shadow: 0 0 0 0.2rem rgba(10, 92, 174, 0.25);
 }
 
 .form-group label {
     font-weight: 600;
-    color: var(--dark-text);
+    color:#333333;
 }
 
 .contact-info-box {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
     color: white;
     padding: 40px;
     border-radius: 15px;
@@ -288,7 +283,162 @@ h1 {
 }
 
 /* Page Management */
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, var(--scendary-green), var(--primary-green));
+    color: white;
+    padding: 100px 0 60px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    font-size: 1.3rem;
+}
 
 /* Success Message */
+.success-message {
+    display: none;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.success-message.show {
+    display: block;
+}
 
 /* Footer */
+footer {
+    background-color:#155724;
+    color: white;
+    padding: 40px 0 30px;
+    margin-top: 20px;
+}
+
+footer h4 {
+    color:var(--golden);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer a {
+    color: rgba(255,255,255,0.8);
+    transition: all 0.3s;
+}
+
+footer a:hover {
+    color: var(--golden);
+    text-decoration: none;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    color: var(--secondary-green);
+    transform: scale(1.2);
+}
+
+/* Comparison Table */
+.table-hover tbody tr:hover {
+    background-color: var(--light-bg);
+}
+
+.table thead.thead-dark th {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    header p {
+        font-size: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 5px 0;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Utility Classes */
+.text-success {
+    color: var(--secondary-green) !important;
+}
+
+.bg-light-green {
+    background-color: var(--light);
+}
+
+/* Loading Animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Smooth Transitions */
+* {
+    transition: background-color 0.3s ease;
+}
+
+a {
+    transition: all 0.3s ease;
+}
+
+button {
+    transition: all 0.3s ease;
+}
