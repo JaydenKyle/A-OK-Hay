@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --primary-green: #4A7C59;
-    --secondary-green: #6B8E23;
-    --golden: #DAA520;
-    --brown: #8B4513;
+    --primary-green: #2a6321;
+    --secondary-green:#367C2B;
+    --golden: #ffc800;
+    --bluetim: #015cd3; 
+    --redalf:#FF0000;
     --light: #ffffff;
 }
 
@@ -21,16 +22,17 @@ body{
 .navbar {
     background:#155724 !important;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    padding: 10px;
+    padding: 8px;
+    
    
 }
 
 .navbar-brand {
-    font-size:medium;
+    font-size:1.3rem;
     font-weight: bold;
     color: white !important;
     letter-spacing: 1px;
-    padding-left:10px;
+    padding-left:18px;
 }
 
 .navbar-nav .nav-link {
@@ -38,7 +40,7 @@ body{
     margin: 0 10px;
     font-weight:bold;
     transition: all 0.3s;
-    font-size: medium;
+    font-size: 1.3rem;
 }
 
 .navbar-nav .nav-link:hover {
@@ -50,14 +52,12 @@ body{
      border-color: rgba(255,255,255,0.5);
 }
 
-.navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
+
 
 /* Header Section */
 header {
-      background:  #FFF8E7
-               url('../images/Haybale.jpg');
+     background:  #FFF8E7
+               url('../assets/Haybale.jpg');
     min-height: 500px;
     display: flex;
     flex-direction: column;
@@ -71,11 +71,12 @@ header {
 header p {
     font-size: 1.5rem;
     margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.902);
+    font-weight: 500;
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
     margin: 20px 0;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
@@ -101,13 +102,32 @@ h1 {
     text-decoration: none;
 }
 
+.btn-custom-product {
+    background-color: var(--redalf);
+    color: white;
+    padding: 12px 40px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-custom-product:hover {
+    background-color: var(--bluetim);
+    transform: scale(1.05);
+    color: white;
+    text-decoration: none;
+}
+
 /* Section Styling */
-
-
 .section-title {
     text-align: center;
     color: var(--golden);
     font-weight: bold;
+   box-shadow: 5px 5px 5px 5px #ffc800;
+   padding: 10px;
 }
 
 
@@ -135,6 +155,7 @@ h1 {
 
 .product-body {
     padding: 25px;
+     font-size: 1.1rem;
 }
 
 .product-title {
@@ -150,7 +171,27 @@ h1 {
     color: white;
     padding: 5px 12px;
     border-radius: 20px;
-    font-size: 0.85rem;
+    font-size: 1.1rem;
+    margin: 5px 3px;
+}
+
+.size-badge-tim {
+    display: inline-block;
+    background-color: var(--bluetim);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    margin: 5px 3px;
+}
+
+.size-badge-alf {
+    display: inline-block;
+    background-color: var(--redalf);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 1.1rem;
     margin: 5px 3px;
 }
 
@@ -176,7 +217,9 @@ h1 {
 
 .client-card h5 {
     margin: 0;
-    color: var(--golden);
+    color: var(--primary-green);
+    font-size: 1.2rem;
+    font-weight:500;
 }
 
 .client-card i {
@@ -197,13 +240,13 @@ h1 {
 }
 
 .stat-number {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .stat-label {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 /* About Section */
@@ -216,7 +259,7 @@ h1 {
 
 .feature-box {
     padding: 30px;
-    background: var(--brown);
+    background: var(--golden);
     border-radius: 10px;
     margin-bottom: 20px;
     transition: all 0.3s;
@@ -330,12 +373,14 @@ footer {
     color: white;
     padding: 40px 0 30px;
     margin-top: 20px;
+    font-size: 1.1rem;
 }
 
 footer h4 {
     color:var(--golden);
     margin-bottom: 20px;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 footer a {

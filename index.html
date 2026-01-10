@@ -1,65 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A-OK Hay</title>
 
-<!----------------------Fonts-------------------------->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!----------------------Fonts-------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
- <!-----------------BS Libraries----------------------->
- <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-----------------BS Libraries----------------------->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
-<!-- jQuery library -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
 
-<!-- Popper JS -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
+<!--------------------------Font Awesome------------------------------>
+ <link href="assets/" rel="stylesheet" />
+  <link href="assets/css/brands.css" rel="stylesheet" />
+  <link href="assets/css/solid.css" rel="stylesheet" />
+  <link href="assets/css/sharp-thin.css" rel="stylesheet" />
+  <link href="assets/css/sharp-duotone-thin.css" rel="stylesheet" />
 
-<!--------------------Custom Stylesheets---------------->
-<link rel="stylesheet" href="css/hayStyles.css">
+    <!--------------------Custom Stylesheets---------------->
+    <link rel="stylesheet" href="css/hayStyles.css">
 </head>
 
 <body>
-<!---------------------Header, Navigation-------------->
-    
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-           <a class="navbar-brand" href="#" onclick="showPage('home')">
-                <i class="fas fa-seedling"></i> A-OK Hay</a>
+    <!---------------------Header, Navigation-------------->
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#" onclick="showPage('home')">Home</a>
-                    </li>
-                    <li class="nav-item">
-                       <a class="nav-link" href="#" onclick="showPage('products')">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="showPage('about')">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                         <a class="nav-link" href="#" onclick="showPage('contact')">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+         <a class="navbar-brand" href="#" onclick="showPage('home')">
+      <img src="assets/A-OkLogo.png" alt="Logo" width="90" height="40" class="d-inline-block align-text-top">
+    </a>
 
-<header>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" onclick="showPage('home')">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showPage('products')">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showPage('about')">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showPage('contact')">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
         <!----------------Hero Section----------------->
         <div class="container-fluid text-center">
-            <h1>Premium Hay for Pet Stores</h1>
+            <h1>A-OK Hay</h1>
+            <p>Premium Hay for Pet Stores</p>
             <p>Supplying Quality Timothy & Alfalfa Hay Across Southern Alberta</p>
             <button class="btn btn-custom" onclick="showpage('contact')">
                 Request More Information
@@ -67,139 +80,539 @@
         </div><!--end of container-->
     </header>
 
-  <div id="home" class="page active">
- <!--------------------------Stats Section-------------------->
-<section class="stats">
-  <div class="container-fluid">
-      <div class="row">
-          <div class="col-md-4 stat-box">
-              <div class="stat-number">7+</div>
-               <div class="stat-label">Trusted Pet Store Partners</div>
-         </div> <!--end column 1-->
-         <div class="col-md-4 stat-box">
-              <div class="stat-number">2</div>
-               <div class="stat-label">Premium Hay Varieties</div>
-         </div> <!--end column 2-->
-         <div class="col-md-4 stat-box">
-            <div class="stat-number">100%</div>
-            <div class="stat-label">Alberta Sourced</div>
-        </div> <!--end column 3-->
-        </div> <!--end row-->
-    </div> <!--end container-->
-</section>
+    <div id="home" class="page active">
 
-<!---------------------------------Products Section------------------------------>
-<section>
- <div class="container-fluid"> 
-    <div class="row px-4 py-4">
-    <h2 class="section-title">Our Premium Hay Products</h2>
-</div><!--end row 1-->
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <div class="product-card">
-                  <img src="image" alt="Timothy Hay" class="product-img">
-                     <div class="product-body">
-                             <h3 class="product-title">Timothy Hay</h3>
-                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, consequatur!</p>
-                            <div class="mt-3">
-                                <span class="size-badge">Size</span>
-                                <span class="size-badge">size</span>
-                                <span class="size-badge">size</span>
-                             </div>
-                             <button class="btn btn-custom mt-3" onclick="handleProductInquiry('Timothy Hay')">Request Info</button>
-                     </div>
-                </div> <!--end card div-->
-            </div> <!--end column 1-->
-            <div class="col-md-6 mb-4">
-                 <div class="product-card">
-                      <img src="image" alt="Alfalfa Hay" class="product-img">
-                         <div class="product-body">
-                             <h3 class="product-title">Alfalfa Hay</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, quia.</p>
-                             <div class="mt-3">
-                                <span class="size-badge">Size</span>
-                                <span class="size-badge">Size</span>
-                                <span class="size-badge">Size</span>
-                             </div>
-                            <button class="btn btn-custom mt-3" onclick="handleProductInquiry('Alfalfa Hay')">Request Info</button>
-                         </div>
-                 </div> <!--end card div-->
-            </div> <!--end column 2-->
-        </div> <!--end row-->
-    </div> <!--end container-->
-</section>
+        <!--------------------------Stats Section-------------------->
+        <section class="stats">
+            <div class="container-fluid">
+                <div class="row px-4 py-4">
+                    <div class="col-md-4 stat-box">
+                        <div class="stat-number">7+</div>
+                        <div class="stat-label">Trusted Pet Store Partners</div>
+                    </div> <!--end column 1-->
+                    <div class="col-md-4 stat-box">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Premium Hay Varieties</div>
+                    </div> <!--end column 2-->
+                    <div class="col-md-4 stat-box">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Alberta Sourced</div>
+                    </div> <!--end column 3-->
+                </div> <!--end row-->
+            </div> <!--end container-->
+        </section>
 
-<!------------------------Client Section------------------->
-<section class="section ">
-  <div class="container-fluid">
-    <div class="row py-4 px-4">
-     <h2 class="section-title">Trusted by Leading Pet Stores</h2>
-    </div> <!--end row 1-->
-    <div class="row">
-         <div class="col-md-4 col-sm-6 mb-3">
-             <div class="client-card">
-                <h5><i class="fas fa-paw"></i> Petland - Lethbridge</h5>
-             </div>
-        </div> <!--end column 1-->
-        <div class="col-md-4 col-sm-6 mb-3">
-             <div class="client-card">
-                 <h5><i class="fas fa-heart"></i> Homes Alive Pets - Lethbridge</h5>
-             </div>
-        </div> <!--end column 2-->
-        <div class="col-md-4 col-sm-6 mb-3">
-            <div class="client-card">
-                 <h5><i class="fas fa-store"></i> Pet Valu - West Lethbridge</h5>
+        <!---------------------------------Products Section------------------------------>
+        <section>
+            <div class="container-fluid">
+                <div class="row px-4 py-4 ">
+                    <h2 class="section-title">Our Premium Hay Products</h2>
+                </div><!--end row 1-->
+                <div class="row px-4 py-2">
+                    <div class="col-md-6 mb-4">
+                        <div class="product-card">
+
+
+                            <img src="assets/3DisplayTimHay.jpg" alt="Timothy Hay" class="product-img">
+
+
+                            <div class="product-body">
+                                <h3 class="product-title">Timothy Hay</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error,</p>
+                                <div class="mt-3">
+                                    <span class="size-badge-tim">Small - 1lbs</span>
+                                    <span class="size-badge-tim">size</span>
+                                    <span class="size-badge-tim">size</span>
+                                </div>
+                                <button class="btn btn-custom-product mt-3"
+                                    onclick="handleProductInquiry('Timothy Hay')">Request Info</button>
+                            </div>
+                        </div> <!--end card div-->
+                    </div> <!--end column 1-->
+                    <div class="col-md-6 mb-4">
+                        <div class="product-card">
+
+                            <img src="assets/image" alt="Alfalfa Hay" class="product-img">
+
+                            <div class="product-body">
+                                <h3 class="product-title">Alfalfa Hay</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, quia.</p>
+                                <div class="mt-3">
+                                    <span class="size-badge-alf">Size</span>
+                                    <span class="size-badge-alf">Size</span>
+                                    <span class="size-badge-alf">Size</span>
+                                </div>
+                                <button class="btn btn-custom-product mt-3"
+                                    onclick="handleProductInquiry('Alfalfa Hay')">Request Info</button>
+                            </div>
+                        </div> <!--end card div-->
+                    </div> <!--end column 2-->
+                </div> <!--end row-->
+            </div> <!--end container-->
+        </section>
+
+        <!------------------------Client Section------------------->
+        <section class="section ">
+            <div class="container-fluid">
+                <div class="row py-2 px-4">
+                    <h2 class="section-title">Trusted by Leading Pet Stores</h2>
+                </div> <!--end row 1-->
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 mb-3">
+                        <div class="client-card">
+                            <h5><i class="fas fa-paw"></i> Petland - Lethbridge</h5>
+                        </div>
+                    </div> <!--end column 1-->
+                    <div class="col-md-4 col-sm-6 mb-3">
+                        <div class="client-card">
+                            <h5><i class="fas fa-heart"></i> Homes Alive Pets - Lethbridge</h5>
+                        </div>
+                    </div> <!--end column 2-->
+                    <div class="col-md-4 col-sm-6 mb-3">
+                        <div class="client-card">
+                            <h5><i class="fas fa-store"></i> Pet Valu - West Lethbridge</h5>
+                        </div>
+                    </div> <!--end column 3-->
+                    <div class="col-md-4 col-sm-6 mb-3">
+                        <div class="client-card">
+                            <h5><i class="fas fa-fish"></i> Pisces Pet Emporium - Calgary</h5>
+                        </div>
+                    </div> <!--end column 1-->
+                    <div class="col-md-4 col-sm-6 mb-3">
+                        <div class="client-card">
+                            <h5><i class="fas fa-store"></i> Pet Valu - High River</h5>
+                        </div>
+                    </div> <!--end column 1-->
+                    <div class="col-md-4 col-sm-6 mb-3">
+                        <div class="client-card">
+                            <h5><i class="fas fa-paw"></i> Petland - Medicine Hat</h5>
+                        </div>
+                    </div> <!--end column 2-->
+                    <div class="col-md-4 col-sm-6 mb-3">
+                        <div class="client-card">
+                            <h5><i class="fas fa-tools"></i> Home Hardware - Claresholm</h5>
+                        </div>
+                    </div> <!--end column 3-->
+                </div> <!--end of row-->
+            </div> <!--end container-->
+        </section>
+    </div>
+
+
+    <!---------------------Products Page----------->
+    <div id="products" class="page">
+        <div class="page-header">
+            <div class="container">
+                <h1>Our Products</h1>
+                <p>Premium hay varieties for your pet store customers</p>
             </div>
-        </div> <!--end column 3-->
-         <div class="col-md-4 col-sm-6 mb-3">
-            <div class="client-card">
-                <h5><i class="fas fa-fish"></i> Pisces Pet Emporium - Calgary</h5>
-            </div>
-        </div> <!--end column 1-->
-         <div class="col-md-4 col-sm-6 mb-3">
-             <div class="client-card">
-                    <h5><i class="fas fa-store"></i> Pet Valu - High River</h5>
-             </div>
-         </div> <!--end column 1-->
-         <div class="col-md-4 col-sm-6 mb-3">
-            <div class="client-card">
-                 <h5><i class="fas fa-paw"></i> Petland - Medicine Hat</h5>
-            </div>
-        </div> <!--end column 2-->
-        <div class="col-md-4 col-sm-6 mb-3">
-             <div class="client-card">
-                 <h5><i class="fas fa-tools"></i> Home Hardware - Claresholm</h5>
-             </div>
-        </div> <!--end column 3-->
-     </div>  <!--end of row-->
- </div> <!--end container-->
-</section>
-</div>
+        </div>
 
-<!------------------Footer--------------------->
-<footer>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4 mb-4">
-             <h4><i class="fas fa-seedling"></i> A-OK Hay</h4>
-                <p>Premium hay supplier for Southern Alberta pet stores. Quality you can trust, service you can count on.</p>
-        </div> <!--end column 1-->
-         <div class="col-md-4 mb-4">
+        <section class="section">
+            <div class="container">
+                <!-- Timothy Hay -->
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=800" alt="Timothy Hay"
+                            class="img-fluid rounded shadow">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="text-success mb-4">Timothy Hay</h2>
+                        <p class="lead">The gold standard for small animal nutrition.</p>
+                        <p>Our premium timothy hay is carefully harvested and stored to maintain maximum freshness and
+                            nutritional value. It's the perfect staple food for rabbits, guinea pigs, chinchillas, and
+                            other small herbivores.</p>
 
-        </div> <!--end column 2-->
-         <div class="col-md-4 mb-4">
-             <h4>Our Clients</h4>
-                 <p>Proudly serving 7+ pet stores across Alberta including Lethbridge, Calgary, Medicine Hat, and High River.</p>
-        </div> <!--end column 3-->
-      </div> <!--end of row-->
-        <hr style="background-color: rgba(255,255,255,0.3);">
+                        <h4 class="mt-4 mb-3">Key Benefits:</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success mr-2"></i> High fiber content for digestive
+                                health</li>
+                            <li><i class="fas fa-check-circle text-success mr-2"></i> Low protein and calcium (ideal for
+                                adult animals)</li>
+                            <li><i class="fas fa-check-circle text-success mr-2"></i> Supports dental health through
+                                natural chewing</li>
+                            <li><i class="fas fa-check-circle text-success mr-2"></i> Dust-free and allergen-friendly
+                            </li>
+                        </ul>
+
+                        <h4 class="mt-4 mb-3">Available Sizes:</h4>
+                        <span class="size-badge">Small Bales (5-10 lbs)</span>
+                        <span class="size-badge">Medium Bales (20-30 lbs)</span>
+                        <span class="size-badge">Large Bales (50+ lbs)</span>
+                        <span class="size-badge">Compressed Packages</span>
+
+                        <div class="mt-4">
+                            <button class="btn btn-custom-product" onclick="showPage('contact')">Request Wholesale
+                                Pricing</button>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-5">
+
+                <!-- Alfalfa Hay -->
+                <div class="row">
+                    <div class="col-md-6 order-md-2">
+                        <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=800" alt="Alfalfa Hay"
+                            class="img-fluid rounded shadow">
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <h2 class="text-success mb-4">Alfalfa Hay</h2>
+                        <p class="lead">Nutrient-dense hay for growing and nursing animals.</p>
+                        <p>Our premium alfalfa hay provides exceptional nutritional value with higher protein and
+                            calcium content. Perfect for young, pregnant, or nursing animals, as well as underweight
+                            pets needing additional nutrition.</p>
+
+                        <h4 class="mt-4 mb-3">Key Benefits:</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success mr-2"></i> High protein for growth and
+                                development</li>
+                            <li><i class="fas fa-check-circle text-success mr-2"></i> Rich in calcium for strong bones
+                            </li>
+                            <li><i class="fas fa-check-circle text-success mr-2"></i> Excellent palatability - animals
+                                love it!</li>
+                            <li><i class="fas fa-check-circle text-success mr-2"></i> Energy-dense for active animals
+                            </li>
+                        </ul>
+
+                        <h4 class="mt-4 mb-3">Available Sizes:</h4>
+                        <span class="size-badge">Small Bales (5-10 lbs)</span>
+                        <span class="size-badge">Medium Bales (20-30 lbs)</span>
+                        <span class="size-badge">Large Bales (50+ lbs)</span>
+                        <span class="size-badge">Compressed Packages</span>
+
+                        <div class="mt-4">
+                            <button class="btn btn-custom-product" onclick="showPage('contact')">Request Wholesale
+                                Pricing</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comparison Table -->
+                <div class="mt-5 pt-5">
+                    <h2 class="section-title">Product Comparison</h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Feature</th>
+                                    <th>Timothy Hay</th>
+                                    <th>Alfalfa Hay</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Protein Content</strong></td>
+                                    <td>8-11%</td>
+                                    <td>15-20%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Calcium Content</strong></td>
+                                    <td>Low (0.4-0.6%)</td>
+                                    <td>High (1.2-1.5%)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Best For</strong></td>
+                                    <td>Adult animals, daily diet</td>
+                                    <td>Young, pregnant, nursing animals</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Fiber</strong></td>
+                                    <td>Very High</td>
+                                    <td>High</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Palatability</strong></td>
+                                    <td>High</td>
+                                    <td>Very High</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!---------------About Us Page---------------------->
+    <div id="about" class="page">
+        <section class="section">
+            <div class="container-fluid">
+                <div class="row mb-5 px-4 py-4">
+                    <div class="col-md-12">
+                        <div class="about-content">
+                            <h2 class="text-success mb-4">Who We Are</h2>
+                            <p class="lead">A-OK Hay is a dedicated supplier of premium timothy and alfalfa hay,
+                                specializing in wholesale distribution to pet stores across Alberta.</p>
+                            <p>We understand that pet stores need reliable, high-quality hay products to meet the needs
+                                of their customers' beloved small animals. Our mission is to provide consistent, fresh,
+                                and nutritious hay that pet store owners can trust and recommend with confidence.</p>
+                            <p>Based in Alberta, we source our hay locally, ensuring that every bale meets our strict
+                                quality standards. We work directly with experienced hay farmers who share our
+                                commitment to producing the finest feed for small herbivores.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section-title">Why Choose A-OK Hay?</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h4>Locally Sourced Quality</h4>
+                            <p>All our hay is sourced from trusted Alberta farms. We personally inspect every harvest to
+                                ensure it meets our high standards for color, texture, and nutritional content.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <h4>Reliable Delivery</h4>
+                            <p>We understand that running out of hay isn't an option for pet stores. Our delivery
+                                schedule is consistent and dependable, ensuring your shelves are always stocked.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <h4>Competitive Wholesale Pricing</h4>
+                            <p>We offer competitive wholesale rates with volume discounts. Our goal is to help your
+                                business succeed by providing excellent products at fair prices.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Quality Guarantee</h4>
+                            <p>Every bale is carefully inspected and stored in climate-controlled facilities. We
+                                guarantee freshness, minimal dust, and optimal nutritional value in every shipment.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 pt-5">
+                    <h2 class="section-title">Our Commitment</h2>
+                    <div class="about-content">
+                        <p class="lead text-center mb-4">Building long-term partnerships with Alberta's pet stores</p>
+                        <p>At A-OK Hay, we're not just suppliers – we're partners in your business success. We believe
+                            that when your customers' pets are healthy and happy, everyone wins. That's why we're
+                            committed to:</p>
+                        <ul>
+                            <li><strong>Consistency:</strong> Same high quality in every delivery, every time</li>
+                            <li><strong>Communication:</strong> Responsive customer service and transparent business
+                                practices</li>
+                            <li><strong>Flexibility:</strong> Customizable order sizes and delivery schedules to meet
+                                your needs</li>
+                            <li><strong>Education:</strong> We provide product information you can share with your
+                                customers</li>
+                            <li><strong>Sustainability:</strong> Supporting local agriculture and environmentally
+                                responsible farming practices</li>
+                        </ul>
+                        <p class="mt-4">We're proud to serve pet stores throughout Alberta and look forward to the
+                            opportunity to serve yours. Join our growing family of satisfied wholesale partners!</p>
+                    </div>
+                </div>
+            </div><!--ends container-->
+        </section>
+    </div>
+
+
+    <!-------------------- Contact Page------------ -->
+    <div id="contact" class="page">
+        <section class="section">
+            <div class="container-fluid">
+                <div class="row py-4 px-4">
+                    <div class="col-lg-7 mb-4">
+                        <div class="contact-form">
+                            <h3 class="mb-4">Wholesale Inquiry Form</h3>
+                            <div id="successMessage" class="success-message">
+                                <i class="fas fa-check-circle"></i> Thank you for your inquiry! We'll contact you within
+                                1-3 business day.
+                            </div>
+                            <form id="contactForm">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="businessName">Business Name *</label>
+                                        <input type="text" class="form-control" id="businessName" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="contactPerson">Contact Person *</label>
+                                        <input type="text" class="form-control" id="contactPerson" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="email">Email Address *</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="phone">Phone Number *</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="location">Store Location *</label>
+                                    <input type="text" class="form-control" id="location" placeholder="City, Alberta"
+                                        required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inquiryType">Type of Inquiry *</label>
+                                    <select class="form-control" id="inquiryType" required>
+                                        <option value="">Select...</option>
+                                        <option value="new">New Wholesale Account</option>
+                                        <option value="existing">Existing Customer Inquiry</option>
+                                        <option value="general">General Question</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Products Interested In:</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="timothy" value="timothy">
+                                        <label class="form-check-label" for="timothy">
+                                            Timothy Hay
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="alfalfa" value="alfalfa">
+                                        <label class="form-check-label" for="alfalfa">
+                                            Alfalfa Hay
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="both" value="both">
+                                        <label class="form-check-label" for="both">
+                                            Both Products
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="volume">Estimated Monthly Volume</label>
+                                    <select class="form-control" id="volume">
+                                        <option value="">Select...</option>
+                                        <option value="small">Small (1-5 bales)</option>
+                                        <option value="medium">Medium (6-15 bales)</option>
+                                        <option value="large">Large (16-30 bales)</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Message *</label>
+                                    <textarea class="form-control" id="message" rows="5"
+                                        placeholder="Tell us about your needs, delivery preferences, or any questions you have..."
+                                        required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-custom btn-block">
+                                    <i class="fas fa-paper-plane"></i> Submit Inquiry
+                                </button>
+                            </form>
+                        </div><!--ends contact form div-->
+                    </div> <!--ends col-->
+
+                    <div class="col-lg-5 mb-4 py-2">
+                        <div class="contact-info-box">
+                            <h3 class="mb-4">Contact Information</h3>
+
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <strong>Phone</strong><br>
+                                    <i>Not Yet Available</i><br>
+                                    <small>Monday - Friday: </small>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <strong>Email</strong><br>
+                                    wholesale@aokhay.ca<br>
+                                    <small>We respond within 1 business day</small>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Service Area</strong><br>
+                                    Southern Alberta<br>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Business Hours</strong><br>
+                                    Monday - Friday: <br>
+                                    Saturday: <br>
+                                    Sunday:
+                                </div>
+                            </div>
+
+                            <hr class="bg-white my-4">
+
+                            <h4 class="mb-3">Follow Us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+
+                            <div class="mt-4 p-3" style="background: rgba(255,255,255,0.1); border-radius: 10px;">
+                                <h5><i class="fas fa-info-circle"></i> New Customers</h5>
+                                <p class="mb-0">Fill out the form and we'll provide wholesale pricing, minimum order
+                                    information, and delivery schedule options.</p>
+                            </div>
+                        </div>
+                    </div><!--ends col-->
+                </div><!--ends row-->
+            </div><!--ends container-->
+        </section>
+    </div>
+
+
+    <!------------------Footer--------------------->
+    <footer>
+        <div class="container-fluid">
+            <div class="row px-4">
+                <div class="col-md-4 mb-4">
+                    <h4><i class="fas fa-seedling"></i> A-OK Hay</h4>
+                    <p>Premium hay supplier for Southern Alberta pet stores. Quality you can trust, service you can
+                        count on.</p>
+                </div> <!--end column 1-->
+                <div class="col-md-4 mb-4">
+                    <h4>Conact</h4>
+                    <p>ar ar ar</p>
+                </div> <!--end column 2-->
+                <div class="col-md-4 mb-4">
+                    <h4>Our Clients</h4>
+                    <p>Proudly serving 7+ pet stores across Alberta including Lethbridge, Calgary, Medicine Hat, and
+                        High River.</p>
+                </div> <!--end column 3-->
+            </div> <!--end of row-->
+            <hr style="background-color: rgba(255,255,255,0.3);">
             <div class="text-center">
-                <p class="mb-0">&copy; 2024 A-OK Hay. All rights reserved. | Wholesale Inquiries Welcome</p>
+                <p class="mb-0">&copy; 2025 A-OK Hay. All rights reserved. | Wholesale Inquiries Welcome</p>
             </div>
-    </div> <!--end container-->
-</footer>
+        </div> <!--end container-->
+    </footer>
 
- <!-- Custom JS -->
+    <!-- Custom JS -->
     <script src="Js/hay.js"></script>
 </body>
+
 </html>
